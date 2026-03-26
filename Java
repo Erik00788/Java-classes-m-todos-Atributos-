@@ -1,0 +1,67 @@
+public class Main {
+    public static void main(String[] args) {
+        
+        Caminhao meuCaminhao = new Caminhao();
+        meuCaminhao.marca = "Mercedes";
+        meuCaminhao.cor = "Azul";
+        meuCaminhao.sinaliza();
+
+        Impressora hp = new Impressora();
+        hp.cor = "Preta";
+        hp.imprimir();
+
+        MetralhadoraMag mag = new MetralhadoraMag();
+        mag.municao = "7.62mm";
+        mag.atirar();
+
+        Porta portaEntrada = new Porta();
+        portaEntrada.material = "Madeira";
+        portaEntrada.abrir();
+
+        Lanterna tática = new Lanterna();
+        tática.luz = "LED";
+        tática.acender();
+        
+        System.out.println("Objetos criados e métodos chamados com sucesso!");
+    }
+}
+
+class Caminhao {
+    String bau, retrovisor, cor, volante, marca;
+    void corre() {}
+    void frear() {}
+    void parado() {}
+    void curva() {}
+    void sinaliza() { System.out.println("Caminhão sinalizando..."); }
+}
+
+class Impressora {
+    String cor, tubo, botao, tela;
+    void imprimir() { System.out.println("Imprimindo..."); }
+    void pintar() {}
+    void escaniar() {}
+    void xeroca() {}
+}
+
+class MetralhadoraMag {
+    String gatilho, mira, cartucho, suporte, municao;
+    void ia() {}
+    void atirar() { System.out.println("Fogo!"); }
+    void matar() {}
+    void mirar() {}
+    void ferir() {}
+    void aniquila() {}
+}
+
+class Porta {
+    String cor, material, macaneta, tamanho;
+    void abrir() { System.out.println("Porta aberta."); }
+    void fechar() {}
+    void encadear() {}
+}
+
+class Lanterna {
+    String material, luz, vidro;
+    void acender() { System.out.println("Lanterna ligada."); }
+    void apagar() {}
+}
